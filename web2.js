@@ -58,4 +58,5 @@ const server = http.createServer((req, res) => {
       res.end("<h1>404 - Not found</h1>")
    }
 });
-server.listen(8888)
+const port = process.env.PORT || 3001;
+server.listen(port);
